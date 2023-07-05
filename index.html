@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>| Cursos para Jubilados |</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/icono.png" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rowdies&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Barra de navegacion-->
+  <nav id="hero" class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo-light" class="icono-logo" src="images/icono.png" width="50" alt="Logo Inicial">
+          <img id="logo-dark" class="icono-logo" src="images/icono-blanco.svg" width="50" alt="Logo Inicial">
+          AprendeExperiencia
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#cursos-valorados">Cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-nst">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="misCursos.html">Iniciar sesion</a>
+          </li>
+        </ul>
+      </div>
+      <button class="switch" id="switch">
+        <span><i class="bi bi-brightness-high-fill"></i></span>
+        <span><i class="bi bi-moon-stars-fill"></i></span>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <!-- Seccion HERO -->
+    <section class="hero seccion-clara d-flex flex-column">
+      <img src="images/jubiladosfelices.jpg" alt="jubilados felices">
+      <h1>Aprende Experiencia</h1>
+     <h2>
+      <a href="inscripcion.html" rel="noopener noreferrer">
+        <button id="btn-ver-mas-cursos" type="button" class="btn-ver-mas">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Comenzar ahora
+          <i class="bi bi-arrow-right-circle"></i>
+        </button>
+      </a>
+     </h2>
+    </section>
+
+    <!-- Seccion sobre nosotros oscura-->
+    <section class="sobre-nst seccion-oscura">
+      <div class="contenedor">
+        <h2 id="sobre-nst" class="seccion-titulo">Sobre nosotros</h2>
+        <p class="seccion-texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero mollitia delectus corrupti numquam enim cumque magnam repellat aperiam ex accusamus! Amet dicta placeat dolorem dignissimos facilis enim minima doloribus molestiae! </p>
+      </div>
+    </section>    
+    <!-- Seccion por que elegirnos clara-->
+    <section id="porque-elegirnos" class="porque-elegirnos seccion-clara">
+      <div class="container text-center">
+        <div class="row" data-aos="fade-up">
+          <!-- Clases interactivas -->
+          <div class="columna cursos-interactivos col-12 col-md-6 col-xl-4">
+            <i class="bi bi-people"></i>
+            <p class="porque-elegirnos-titulo">Clases interactivas</p>
+            <p>Ofrecemos clases interactivas diseñadas específicamente para adultos mayores. Nuestro enfoque se centra en brindar un ambiente cómodo y amigable para aprender.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Aprendizaje colaborativo</span>
+              <span class="badge text-bg-primary">Ambiente amigable</span>
+              <span class="badge text-bg-primary">Material adaptado</span>
+              <span class="badge text-bg-primary">Atención personalizada</span>
+            </div>
+          </div>
+          <!-- Tecnología actual -->
+          <div class="columna tecnologia-actual col-12 col-md-6 col-xl-4">
+            <i class="bi bi-laptop"></i>
+            <p class="porque-elegirnos-titulo">Tecnología actual</p>
+            <p>Nuestros cursos están actualizados con las últimas tecnologías utilizadas en la actualidad. Te brindaremos las herramientas necesarias para mantenerte al día en el mundo digital.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Internet y navegación</span>
+              <span class="badge text-bg-primary">Redes sociales</span>
+              <span class="badge text-bg-primary">Correo electrónico</span>
+              <span class="badge text-bg-primary">Aplicaciones móviles</span>
+            </div>
+          </div>
+          <!-- Aprendizaje a tu ritmo -->
+          <div class="columna aprendizaje-ritmo col-12 col-md-12 col-xl-4">
+            <i class="bi bi-clock"></i>
+            <p class="porque-elegirnos-titulo">Aprendizaje a tu ritmo</p>
+            <p>Entendemos que cada persona tiene su propio ritmo de aprendizaje. Por eso, nuestros cursos se adaptan a tus necesidades y podrás aprender a tu propio paso, sin presiones.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Flexible y sin presiones</span>
+              <span class="badge text-bg-primary">Acceso ilimitado a recursos</span>
+              <span class="badge text-bg-primary">Apoyo continuo</span>
+              <span class="badge text-bg-primary">Experiencia positiva</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- Seccion Cursos -->
+        <section id="cursos-valorados" class="seccion-clara d-flex flex-column">
+          <h2 class="seccion-titulo texto-negro">Cursos más valorados</h2>
+          <h3 class="seccion-descripcion">Descubre nuestros cursos más populares...</h3>
+          <!-- Galeria de cursos -->
+          <div class="conteiner text-center cursos-contenedor">
+            <div class="row">
+              <div class="col-12 col-md-12 col-xl-4">
+                <div class="curso">
+                  <a href="inscripcionCursos.html">
+                  <img src="images/curso5.jpg" alt="Curso de pintura">
+                  <div class="overlay">
+                    <p>Domina el celular</p>
+                  </div>
+                </a> 
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="curso">
+                  <a href="inscripcionCursos.html">
+                  <img src="images/curso4.jpg" alt="Curso de computación">
+                  <div class="overlay">
+                    <p>Computacion basica</p>
+                  </div>
+                </a> 
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <div class="curso">
+<a href="inscripcionCursos.html">
+    <img src="images/cursoComida.jpg" alt="Curso de pintura">
+    <div class="overlay">
+      <p>Cocina como chef</p>
+    </div>
+  </a>  
+  </div>
+              </div>
+             
+            <div>
+              <br>
+              <a href="#" rel="noopener noreferrer">
+                <button id="btn-ver-mas-cursos" type="button" class="btn-ver-mas">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Ver más cursos
+                  <i class="bi bi-arrow-right-circle"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </section>
+        
+  </main>
+  <!-- Pie de pagina ( footer )-->
+  <footer class="seccion-oscura">
+    <p class="footer-texto text-center">Descubre un mundo de aprendizaje.<br>Avanzemos juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+    </div>
+    <div class="derechos-de-autor">
+      <p>Aquino Mariana - Fittipaldi Hernán - Sersewitz Guido <br>(Visualizacion e Interfaces 2023) &#169;</p>
+    </div>
+  </footer>
+  <!-- Bootstraap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- Javascript-->
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>| Cursos para Jubilados |</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/inscripcion.css">
+  <link rel="icon" href="images/icono.png" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rowdies&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Barra de navegacion-->
+  <nav id="hero" class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo-light" class="icono-logo" src="images/icono.png" width="50" alt="Logo Inicial">
+          <img id="logo-dark" class="icono-logo" src="images/icono-blanco.svg" width="50" alt="Logo Inicial">
+          AprendeExperiencia
+        </a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#cursos-valorados">Mis cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-nst">Mi perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Cerrar sesion</a>
+          </li>
+        </ul>
+      </div>
+      <button class="switch" id="switch">
+        <span><i class="bi bi-brightness-high-fill"></i></span>
+        <span><i class="bi bi-moon-stars-fill"></i></span>
+      </button>
+    </div>
+  </nav>
+  <main>
+    <section class="hero seccion-clara">
+        <img src="images/curso-computacion.jpeg" alt="">
+        <h1 class="text-center mb-3 mt-3">Introducción a la Informática</h1>
+    </section>
+    <section class="seccion-clara">
+    <div class="container d-flex justify-content-around">
+        <div class="col-5 mt-5">
+            
+            <p class="text-justify">
+                Este curso está diseñado para aquellos adultos mayores que desean adquirir conocimientos básicos de 
+                computación y aprovechar las ventajas que la tecnología moderna puede ofrecerles. Durante este curso, 
+                los participantes explorarán los fundamentos de la informática de una manera amigable y accesible, 
+                sin requerir experiencia previa en el uso de computadoras.
+            </p>
+            <p class="text-justify">
+                El objetivo principal del curso es familiarizarlos con los conceptos y habilidades fundamentales que 
+                les permitirán utilizar de manera efectiva una computadora personal. A lo largo del programa, 
+                los participantes aprenderán a manejar el sistema operativo, navegar por Internet de forma segura, 
+                enviar y recibir correos electrónicos, utilizar aplicaciones básicas y realizar búsquedas en línea.
+            </p>
+            <div class="row">
+              <div class="col">
+                <p class="text-justify fw-bold">
+                  Instructor: John Doe<br>
+                  Nivel: Básico<br>
+                </p>
+              </div>
+              <div class="col">
+                <p class="text-justify fw-bold">
+                  Duración: 4 semanas <br>
+                  Precio: Gratis
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="col-5 mt-5 mb-3">
+            <form id="registration-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre completo:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Número de teléfono:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Comentarios:</label>
+                <textarea id="comments" name="comments" class="form-control"></textarea>
+            </div>
+            <div class="mb-3 d-flex align-items-center">
+              <input required id="accept" name="accept" type="checkbox" class="me-2">
+              <label for="accept" class="mb-0">He leído y acepto las condiciones del curso.</label>
+            </div>
+            
+            <div class="text-end">
+              <button id="btn-ver-mas-cursos" type="submit" class="btn-ver-mas">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Inscribirme
+                <i class="bi bi-arrow-right-circle"></i>
+              </button>
+            </div>
+            </form>
+        </div>
+    </div>
+</section >
+
+  </main>
+  <!-- Pie de pagina ( footer )-->
+  <footer class="seccion-oscura">
+    <p class="footer-texto text-center">Descubre un mundo de aprendizaje.<br>Avanzemos juntos.</p>
+    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+    </div>
+    <div class="derechos-de-autor">
+      <p>Aquino Mariana - Fittipaldi Hernán - Sersewitz Guido <br>(Visualizacion e Interfaces 2023) &#169;</p>
+    </div>
+  </footer>
+  <!-- Bootstraap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <!-- Javascript-->
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Barra de navegacion */
+.navbar {
+  padding: 1rem;
+  background-color: whitesmoke;
+  transition: .2s all ease-in;
+  box-shadow: inset 1px 15px 15px #41417725;
+}
+.navbar-brand #logo-dark {
+  display: none;
+}
+.navbar a {
+  transition: all .2s ease-in;
+  font-size: 1.3rem;
+  margin: 3px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Dark mode - Modo oscuro Activado */
+.dark .navbar {
+  background-color: #1e1118;
+}
+.dark .navbar-brand #logo-light {
+  display: none;
+}
+.dark .navbar-brand #logo-dark {
+  display: inline;
+}
+.dark .navbar a {
+  color: whitesmoke;
+}
+.dark .navbar a:hover {
+  color: rgb(186, 186, 186);
+}
+.dark .seccion-oscura {
+  background-color: #0b0b0b;
+  color: white;
+}
+.dark .seccion-clara {
+  background-color: #1e1118;
+  color: white;
+}
+.dark .seccion-descripcion {
+  color: white;
+}
+.dark .porque-elegirnos .columna:hover {
+  background-color: #151515;
+}
+.dark .overlay i {
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+}
+.dark .btn-ver-mas:hover {
+  background-color: #151515;
+}
+.dark .hero h1 {
+  color: #ffffff;
+}
+
+.dark .curso a{
+  color: #fff;
+}
+
+.dark .carousel-caption h5, .dark .carousel-caption p{
+  color: #eee;
+}
+
+/* Estilos generales*/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.seccion-oscura {
+  background-color: #1e1118;
+  color: white;
+  transition: .2s all ease-in;
+}
+.seccion-clara {
+  background-color: whitesmoke;
+  color: black;
+  transition: .2s all ease-in;
+}
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 10px;
+  font-family: 'Rowdies', cursive;
+}
+.seccion-descripcion {
+  font-size: 1.2rem;
+  color: #584e4e;
+  font-weight: 400;
+  transition: .2s all ease-in;
+}
+.seccion-texto {
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+/*Boton opcion de dark mode switch*/
+.switch {
+  background: #343D5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: all .2s ease;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+.switch span {
+  width: 28px;
+  height: 28px;
+  line-height: 30px;
+  display: block;
+  color: #fff;
+  background: none;
+}
+.active {
+  color: black;
+}
+.active::after {
+  right: 0;
+  left: unset;
+}
+
+/* boton ver mas efecto serpiente */
+.btn-ver-mas {
+  position: relative;
+  padding: 10px 15px;
+  outline: none;
+  background: #1e1118;
+  color: #fff;
+  transition: .5s;
+  overflow: hidden;
+}
+.btn-ver-mas:hover {
+  background-color: #3f2835;
+}
+.btn-ver-mas span {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  transition: .5s;
+}
+.btn-ver-mas span:nth-child(1) {
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: -100%;
+}
+.btn-ver-mas span:nth-child(2) {
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  right: -100%;
+}
+.btn-ver-mas span:nth-child(3) {
+  width: 2px;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+}
+.btn-ver-mas span:nth-child(4) {
+  width: 2px;
+  height: 100%;
+  top: -100%;
+  right: 0;
+}
+.btn-ver-mas:hover span:nth-child(1) {
+  left: 0;
+}
+.btn-ver-mas:hover span:nth-child(2) {
+  right: 0;
+}
+.btn-ver-mas:hover span:nth-child(3) {
+  bottom: 0;
+}
+.btn-ver-mas:hover span:nth-child(4) {
+  top: 0;
+}
+
+/*Seccion hero*/
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.6;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.hero h2 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Seccion sobre nosotros*/
+.sobre-nst {
+  padding: 10px;
+}
+.sobre-nst .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Sección Por que elegirnos */
+.porque-elegirnos {
+  padding: 40px 40px 60px 40px;
+}
+.porque-elegirnos i {
+  font-size: 2.5rem;
+  background-color: #0a0a23;
+  color: #7ade30;
+  padding: 8px 19px;
+  border-radius: 50%;
+  border: 2px solid black;
+  transition: .2s all ease-in;
+}
+.porque-elegirnos .columna {
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: .2s all ease-in;
+}
+.porque-elegirnos .columna:hover {
+  color: white;
+  background-color: #1e1118;
+}
+.porque-elegirnos .columna:hover i {
+  border: 2px solid white;
+  color: #00ff1a;
+}
+.porque-elegirnos-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badges-contenedor {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+.badges-contenedor span {
+  display: block;
+  margin-bottom: 10px; 
+}
+
+/* Seccion Cursos */
+#cursos-valorados {
+  padding: 40px;
+}
+
+#cursos-valorados img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  transition: all .2s ease;
+}
+
+.overlay {
+  transition: all .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-caption h5, .carousel-caption p{
+  color: #000;
+  font-weight: bold;
+}
+
+.curso {
+  position: relative;
+  border: 2px solid #8080804d;
+  margin-bottom: 3vh;
+}
+
+.curso img {
+  opacity: 0.5;
+  cursor: url(../images/cursormano.png), auto;
+  cursor: pointer;
+}
+
+.curso:hover img {
+  opacity: 0.2;
+}
+
+.curso a {
+  color: rgb(0, 0, 0);
+  font-size: 10vh;
+  font-weight: bold;
+}
+
+.curso .overlay {
+  opacity: 1;
+}
+
+.progress-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4vh;
+}
+
+progress {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item img{
+  opacity: 0.6;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.footer-texto {
+  font-size: 2.5vw;
+  font-family: 'Quicksand', sans-serif;
+  margin: 30px;
+}
+.iconos-redes-sociales i {
+  color: white;
+  padding: 5px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  transition: all .2s ease-in;
+}
+.iconos-redes-sociales i:hover {
+  color: rgb(13, 110, 253);
+}
+.volver {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
+  margin: 20px;
+  transition: .2s;
+}
+.volver:hover {
+  color: rgb(13, 110, 253);
+}
+.derechos-de-autor {
+  display: flex;
+  font-size: 13px;
+  color: #aeaeae;
+  padding: 0px 10px 30px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
+  .switch {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+  .footer-texto {
+    font-size: 5vw;
+  }
+  #porque-elegirnos {
+    background-color: #1e1118;
+    ;
+  }
+  #porque-elegirnos .columna {
+    background-color: #eee;
+    margin-top: 10px;
+  }
+  #porque-elegirnos .columna:hover {
+    color: #000;
+  }
+  .dark #porque-elegirnos .columna:hover {
+    color: white;
+  }
+  .dark #porque-elegirnos .columna {
+    background-color: #151515;
+    ;
+  }
+  .btn-ver-mas {
+    border: 1px solid white;
+  }
+  .switch {
+    display: none;
+  }
+  #navbarButton {
+    color: white;
+  }
+}
