@@ -19,7 +19,7 @@
 </head>
 <body>
   <!-- Barra de navegacion-->
-  <nav id="hero" class="navbar navbar-expand-md navbar-light">
+  <nav class="navbar navbar-expand-md navbar-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,77 +53,84 @@
     </div>
   </nav>
   <main>
-    <section class="hero seccion-clara">
-        <img src="images/curso-computacion.jpeg" alt="">
+    <section class="hero heroCurso seccion-clara">
+        <img src="images/curso-computacion.jpeg" alt="introduccion a la informatica">
         <h1 class="text-center mb-3 mt-3">Introducción a la Informática</h1>
-    </section>
+      </section>
     <section class="seccion-clara">
-    <div class="container d-flex justify-content-around">
-        <div class="col-5 mt-5">
-            
-            <p class="text-justify">
-                Este curso está diseñado para adquirir conocimientos básicos de 
-                computación y aprovechar las ventajas que la tecnología moderna puede ofrecerles. 
-                Los participantes explorarán la informática de una manera amigable y accesible, 
-                sin requerir experiencia previa en el uso de computadoras.
-            </p>
-            <p class="text-justify">
-                El objetivo principal es familiarizarlos con los conceptos y habilidades fundamentales que 
-                les permitirán utilizar de manera efectiva una computadora personal. Se aprenderá a navegar por Internet de forma segura, 
-                enviar y recibir correos electrónicos, utilizar aplicaciones básicas y realizar búsquedas en línea.
-            </p>
-            <div class="row">
-              <div class="col">
-                <p class="text-justify fw-bold">
-                  Instructor: John Doe<br>
-                  Nivel: Básico<br>
-                </p>
-              </div>
-              <div class="col">
-                <p class="text-justify fw-bold">
-                  Duración: 4 semanas <br>
-                  Precio: Gratis
-                </p>
-              </div>
-            </div>
+      <div class="container-fluid btn-container">
+        <a href="#" rel="noopener noreferrer">
+          <button type="button" class="btn-ver-mas btn-active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            CLASES
+            <i class="bi bi-camera-reels-fill"></i>
+          </button>
+        </a>
+        <a href="#" rel="noopener noreferrer">
+          <button type="button" class="btn-ver-mas">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            CONTENIDOS
+            <i class="bi bi-clipboard2-fill"></i>
+          </button>
+        </a>
+        <a href="#" rel="noopener noreferrer">
+          <button type="button" class="btn-ver-mas">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            MENSAJES
+            <i class="bi bi-chat-dots-fill"></i>
+          </button>
+        </a>
+        <a href="#" rel="noopener noreferrer">
+          <button type="button" class="btn-ver-mas">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            PRACTICAS
+            <i class="bi bi-file-earmark-text-fill"></i>
+          </button>
+        </a>
+      </div>
+      <br>
+    </section>
+    <div class="seccion-clara row">
+      <div class="col-md-1 d-flex flex-column justify-content-center">
+        <a href="#" rel="noopener noreferrer">
+          <button type="button" class="btn-ver-mas btn-active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Anterior
+          </button>
+        </a>
+      </div>
+      <div class="col-md-10 d-flex align-items-center justify-content-center">
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/o_78Ue_EUeI" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="col-5 mt-5 mb-3">
-            <form id="registration-form">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nombre completo:</label>
-                <input type="text" id="name" name="name" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo electrónico:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Número de teléfono:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="comments" class="form-label">Comentarios:</label>
-                <textarea id="comments" name="comments" class="form-control"></textarea>
-            </div>
-            <div class="mb-3 d-flex align-items-center">
-              <input required id="accept" name="accept" type="checkbox" class="me-2">
-              <label for="accept" class="mb-0">He leído y acepto las condiciones del curso.</label>
-            </div>
-            
-            <div class="text-end">
-              <button id="btn-ver-mas-cursos" type="submit" class="btn-ver-mas">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Inscribirme
-              </button>
-            </div>
-            </form>
-        </div>
+      </div>
+      <div class="col-md-1 d-flex flex-column  justify-content-center">
+        <a href="#" rel="noopener noreferrer">
+          <button type="button" class="btn-ver-mas btn-active">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Siguiente
+          </button>
+        </a>
+      </div>
     </div>
-</section >
-
   </main>
   <!-- Pie de pagina ( footer )-->
   <footer class="seccion-oscura">
