@@ -80,6 +80,10 @@ html, body {
 }
 
 /* Estilos generales*/
+
+div a{
+  text-decoration: none;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -494,6 +498,10 @@ footer {
 /* Responsive */
 
 @media screen and (max-width: 400px) {
+
+  .hero h1{
+    font-size: 5vh;
+  }
   .overlay p {
     font-size: 18px;
   }
@@ -501,6 +509,9 @@ footer {
     font-size: 40px;
   }
   .switch {
+    display: none;
+  }
+  .badges-contenedor{
     display: none;
   }
 }
