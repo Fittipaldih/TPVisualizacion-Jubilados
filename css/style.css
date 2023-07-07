@@ -98,7 +98,7 @@ section {
 }
 .seccion-titulo {
   font-size: 2rem;
-  padding: 15px 10px;
+  padding: 10px 10px;
   font-family: 'Rowdies', cursive;
 }
 .seccion-descripcion {
@@ -294,10 +294,16 @@ section {
   display: block;
   margin-bottom: 10px; 
 }
-
+.porque-elegirnos .badge:hover {
+  color: white;
+  background-color: #1e1118;
+}
+.badge {
+  background-color: #1e1118;
+}
 /* Seccion Cursos */
 .cursos-valorados {
-  padding: 40px;
+  padding-bottom: 40px;
 }
 
 .cursos-valorados img {
@@ -306,6 +312,15 @@ section {
   display: inline-block;
   transition: all .2s ease;
 }
+.boton-inscripcion{
+  color: #1e1118!important;
+  border-color: #1e1118!important;
+}
+
+.boton-inscripcion:hover{
+  color: whitesmoke!important;
+  background-color: #1e1118!important;
+} 
 
 .overlay {
   transition: all .2s ease;
@@ -316,6 +331,10 @@ section {
   text-align: center;
   transform: translate(-50%, -50%);
   font-size: 6vh;
+}
+
+.overlay p{
+  font-size: 15px;
 }
 
 .carousel-caption h5{
@@ -357,27 +376,31 @@ section {
 }
 
 .progress-wrapper {
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 4vh;
+  height: 2vh;
 }
 
-progress {
-  width: 100%;
-  height: 100%;
+.progress-color{
+  background-color: #1e1118!important;
 }
 
-.carousel-item img{
-  opacity: 0.6;
+.play{
+  font-size: 22px;
+  padding-right: 4px;
+  color: #1e1118;
+}
+
+.cursos-comenzados{
+  color: #1e1118;
+  text-decoration: none;
 }
 
 /* Seccion curso - reproductor de video */
 .video-container {
   position: relative;
-  width: 80%;
-  height: 0;
+  width: 100%;
+  margin: auto;
+  height: 80%;
   padding-bottom: 56.25%;
   overflow: hidden;
 }

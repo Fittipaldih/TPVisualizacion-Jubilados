@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <!-- Metadatos -->
   <meta charset="UTF-8">
@@ -17,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rowdies&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Barra de navegacion-->
   <nav class="navbar navbar-expand-md navbar-light">
@@ -53,11 +55,13 @@
     </div>
   </nav>
   <main>
-    <section class="hero heroCurso seccion-clara">
-        <img src="images/curso-computacion.jpeg" alt="introduccion a la informatica">
-        <h1 class="text-center mb-3 mt-3">Introducción a la Informática</h1>
-      </section>
     <section class="seccion-clara">
+    <div class="container p-3">
+    <div class="d-flex">
+      <h1 class="mt-lg-4 col-12 mb-3 mt-3">Introducción a la Informática</h1>
+    </div>
+
+      <hr />
       <div class="container-fluid btn-container">
         <a href="#" rel="noopener noreferrer">
           <button type="button" class="btn-ver-mas btn-active">
@@ -100,45 +104,48 @@
           </button>
         </a>
       </div>
-      <br>
-    </section>
-    <div class="seccion-clara row">
-      <div class="col-md-1 d-flex flex-column justify-content-center">
-        <a href="#" rel="noopener noreferrer">
-          <button type="button" class="btn-ver-mas btn-active">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Anterior
-          </button>
-        </a>
+      <div class="container-fluid px-4 ps-md-4 ps-lg-5 px-xl-0 ms-lg-2 ms-xl-0">
+        <h1 class="mt-lg-4 col-12 mb-3 mt-3">Clase Nº 1 - Introducción</h1>
       </div>
-      <div class="col-md-10 d-flex align-items-center justify-content-center">
+    
         <div class="video-container">
           <iframe src="https://www.youtube.com/embed/o_78Ue_EUeI" frameborder="0" allowfullscreen></iframe>
         </div>
-      </div>
-      <div class="col-md-1 d-flex flex-column  justify-content-center">
-        <a href="#" rel="noopener noreferrer">
-          <button type="button" class="btn-ver-mas btn-active">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Siguiente
-          </button>
-        </a>
+      <div class="d-flex justify-content-between">
+        <div class="col-md-1 d-flex flex-column justify-content-center">
+          <a href="#" rel="noopener noreferrer">
+            <button type="button" disabled="disabled" class="btn-ver-mas btn-active">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Anterior
+            </button>
+          </a>
+        </div>
+        <div class="col-md-1 d-flex flex-column  justify-content-center">
+          <a href="#" rel="noopener noreferrer">
+            <button type="button" class="btn-ver-mas btn-active">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Siguiente
+            </button>
+          </a>
+        </div>
       </div>
     </div>
+  </section>
+
   </main>
   <!-- Pie de pagina ( footer )-->
   <footer class="seccion-oscura">
-    <p class="footer-texto text-center">Descubre un mundo de aprendizaje.<br>Avanzemos juntos.</p>
+    <p class="footer-texto text-center">Descubre un mundo de aprendizaje.<br>Avancemos juntos.</p>
     <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-twitter"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
     </div>
     <div class="derechos-de-autor">
       <p>Aquino Mariana - Fittipaldi Hernán - Sersewitz Guido <br>(Visualizacion e Interfaces 2023) &#169;</p>
@@ -151,4 +158,5 @@
   <!-- Javascript-->
   <script src="js/index.js"></script>
 </body>
+
 </html>

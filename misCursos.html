@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <!-- Metadatos -->
   <meta charset="UTF-8">
@@ -8,6 +9,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/icono.png" type="image/x-icon">
+  <!--Link Iconos-->
+  <script src="https://kit.fontawesome.com/d29453ffcf.js" crossorigin="anonymous"></script>
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -17,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rowdies&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Barra de navegacion-->
   <nav id="hero" class="navbar navbar-expand-md navbar-light">
@@ -57,218 +61,240 @@
     <section class="hero seccion-clara">
       <img src="images/jubiladosfelices2.jpg" alt="jubilados felices">
       <h1 class="text-center mb-3 mt-3">Bienvenido nuevamente!</h1>
-  </section>
-        <!-- Seccion cursos ya adquiridos y comenzados-->
-        <section id="cursos" class="cursos-valorados seccion-clara d-flex flex-column">
-          <h2 class="seccion-titulo texto-negro">Continua donde lo dejaste...</h2>
-          <h3 class="seccion-descripcion">Cursos ya iniciados y en progreso</h3>
-          <!-- Galeria de cursos -->
-          <div class="container text-center cursos-contenedor">
-            <div class="row">
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="curso">
-                  <div class="progress-wrapper">
-                    <progress value="60" max="100"></progress>
+    </section>
+    <!-- Seccion cursos ya adquiridos y comenzados-->
+    <section id="cursos" class="cursos-valorados seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro mt-4">Continuá donde lo dejaste</h2>
+      <div id="carrusel-cursos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container text-center cursos-contenedor">
+              <div class="row">
+                <div class="col-12 col-md-4 col-xl-4">
+                  <div class="card">
+                    <a href="curso.html" class="cursos-comenzados">
+                      <img src="images/curso5.jpg" alt="" class="card-img-top">
+                      <div class="progress">
+                        <div class="progress-bar progress-color" role="progressbar" style="width: 75%"
+                          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center"><i class="fa-regular fa-circle-play play"></i>Dominá el
+                          Celular
+                        </h5>
+                      </div>
+                    </a>
                   </div>
-                  <a href="curso.html">
-                    <img src="images/curso4.jpg" alt="Curso de pintura">
-                    <div class="overlay">
-                      Computacion básica
-                    </div>
-                  </a>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="curso">
-                  <div class="progress-wrapper">
-                    <progress value="85" max="100"></progress>
+                <div class="col-12 col-md-4 col-xl-4">
+                  <div class="card">
+                    <a href="curso.html" class="cursos-comenzados">
+                      <img src="images/curso4.jpg" alt="" class="card-img-top">
+                      <div class="progress">
+                        <div class="progress-bar progress-color" role="progressbar" style="width: 55%"
+                          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center"><i class="fa-regular fa-circle-play play"></i>Computacion
+                          básica
+                        </h5>
+                      </div>
+                    </a>
                   </div>
-                  <a href="curso.html">
-                  <img src="images/curso5.jpg" alt="Curso de computación">
-                  <div class="overlay">
-                    Domina el celular
-                  </div>
-                  </a>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="curso">
-                  <div class="progress-wrapper">
-                    <progress value="25" max="100"></progress>
+                <div class="col-12 col-md-4 col-xl-4">
+                  <div class="card">
+                    <a href="curso.html" class="cursos-comenzados">
+                      <img src="images/cursoBaile.jpg" alt="" class="card-img-top">
+                      <div class="progress">
+                        <div class="progress-bar progress-color" role="progressbar" style="width: 95%"
+                          aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <div class="card-body">
+                        <h5 class="card-title text-center"><i class="fa-regular fa-circle-play play"></i>Baila Feliz
+                        </h5>
+                      </div>
+                    </a>
                   </div>
-                  <a href="curso.html">
-                  <img src="images/cursoBaile.jpg" alt="Curso de pintura">
-                  <div class="overlay">
-                    Baila feliz
-                  </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="curso">
-                  <div class="progress-wrapper">
-                    <progress value="75" max="100"></progress>
-                  </div>
-                  <a href="curso.html">
-                  <img src="images/cursoCocina.jpg" alt="Curso de pintura">
-                  <div class="overlay">
-                    Cocina rico
-                  </div>
-                  </a>
-                </div>
-              </div>
-          </div>
-        </section>
-        
-        <!-- Carrusel de cursos adquiridos sin comenzar -->
-        <section class="cursos-valorados seccion-clara d-flex flex-column">
-          <h2 class="seccion-titulo texto-negro">Empezá una nueva aventura...</h2>
-          <h3 class="seccion-descripcion">Cursos adquiridos pero no iniciados</h3>
-        
-          <div id="carouselCursosAdquiridos" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/cursoComida.jpg" class="d-block w-100" alt="Curso de ciclismo">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Cocina como un Chef</h5>
-                  <p>Aprende los trucos de los mejores cocinerxs.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/cursoPerro.jpg" class="d-block w-100" alt="Curso de cocina">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Mejor amigo en casa</h5>
-                  <p>Cuida tu mascota sin que rompa la casa.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="images/cursoMaraton.jpg" class="d-block w-100" alt="Curso de pintura">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Corre sin límites</h5>
-                  <p>No más excusas, los mejores trucos para alcanzar la meta.</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCursosAdquiridos" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselCursosAdquiridos" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-        </section>
-        
+        </div>
+        <a class="carousel-control-prev" href="#carrusel-cursos" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carrusel-cursos" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
 
-        <section class="cursos-valorados seccion-clara d-flex flex-column">
-          <h2 class="seccion-titulo texto-negro">Sabemos que te va interesar...</h2>
-          <h3 class="seccion-descripcion">Cursos relacionados</h3>
-          <!-- Carrusel de otros cursos -->
-          <div id="carrusel-cursos" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container text-center cursos-contenedor">
-                  <div class="row">
-                    <div class="col-12 col-md-4 col-xl-4">
-                      <div class="curso">
-                        <a href="inscripcionCursos.html">
-                          <img src="images/cursoVino.jpg" alt="Curso de pintura">
-                          <div class="overlay">
-                            Vinos
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-xl-4">
-                      <div class="curso">
-                        <a href="inscripcionCursos.html">
-                          <img src="images/cursoAjedrez.jpg" alt="Curso de computación">
-                          <div class="overlay">
-                            Ajedrez
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-xl-4">
-                      <div class="curso">
-                        <a href="inscripcionCursos.html">
-                          <img src="images/curso3.jpg" alt="Curso de pintura">
-                          <div class="overlay">
-                            Ecologia
-                          </div>
-                        </a>
-                      </div>
+
+
+
+      <!-- Carrusel de cursos adquiridos sin comenzar -->
+      <section class="cursos-valorados seccion-clara d-flex flex-column mt-5">
+        <h2 class="seccion-titulo texto-negro">¡Empezá una nueva aventura!</h2>
+        <h3 class="seccion-descripcion mb-4">Cursos que aún no has iniciados</h3>
+        <div id="carrusel-cursos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container text-center cursos-contenedor">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="card">
+                      <a href="inscripcionCursos.html" class="cursos-comenzados">
+                        <img src="images/cursoVino.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Vinos
+                          </h5>
+                        </div>
+                      </a>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container text-center cursos-contenedor">
-                  <div class="row">
-                    <div class="col-12 col-md-4 col-xl-4">
-                      <div class="curso">
-                        <a href="inscripcionCursos.html">
-                          <img src="images/cursoTarjeta.jpg" alt="Curso de música">
-                          <div class="overlay">
-                            Tarjetas
-                          </div>
-                        </a>
-                      </div>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="card">
+                      <a href="inscripcionCursos.html" class="cursos-comenzados">
+                        <img src="images/cursoAjedrez.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Ajedrez
+                          </h5>
+                        </div>
+                      </a>
                     </div>
-                    <div class="col-12 col-md-4 col-xl-4">
-                      <div class="curso">
-                        <a href="inscripcionCursos.html">
-                          <img src="images/cursoFotografia.jpg" alt="Curso de fotografía">
-                          <div class="overlay">
-                            Fotografía
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-xl-4">
-                      <div class="curso">
-                        <a href="inscripcionCursos.html">
-                          <img src="images/cursoFeliz.jpg" alt="Curso de idiomas">
-                          <div class="overlay">
-                            Felicidad
-                          </div>
-                        </a>
-                      </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="card">
+                      <a href="inscripcionCursos.html" class="cursos-comenzados">
+                        <img src="images/curso3.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Ecologia
+                          </h5>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carrusel-cursos" role="button" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carrusel-cursos" role="button" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
+
+            <div class="carousel-item">
+              <div class="container text-center cursos-contenedor">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="card">
+                      <a href="inscripcionCursos.html" class="cursos-comenzados">
+                        <img src="images/cursoTarjeta.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Tarjetas
+                          </h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="card">
+                      <a href="inscripcionCursos.html" class="cursos-comenzados">
+                        <img src="images/cursoFotografia.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Fotografía
+                          </h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="card">
+                      <a href="inscripcionCursos.html" class="cursos-comenzados">
+                        <img src="images/cursoFeliz.jpg" alt="" class="card-img-top">
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Felicidad
+                          </h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <a target="_blank" rel="noopener noreferrer">
-            <button id="btn-ver-mas-cursos" type="button" class="btn-ver-mas">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Ver más cursos
-            </button>
+          <a class="carousel-control-prev" href="#carrusel-cursos" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </a>
-        </section>
-            
+          <a class="carousel-control-next" href="#carrusel-cursos" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </a>
+        </div>
+      </section>
+
+
+      <section class="cursos-valorados seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Sabemos que te va interesar...</h2>
+        <!-- Carrusel de otros cursos -->
+        <div id="carrusel-cursos" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container text-center cursos-contenedor">
+                <div class="row">
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="curso">
+                      <a href="inscripcionCursos.html">
+                        <img src="images/cursoCocina.jpg" alt="Curso de pintura">
+                        <div class="overlay col-12">
+                          <h5>Cocina como un Chef</h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="curso">
+                      <a href="inscripcionCursos.html">
+                        <img src="images/cursoMaraton.jpg" alt="Curso de computación">
+                        <div class="overlay">
+                          <h5>Corre sin límites</h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-xl-4">
+                    <div class="curso">
+                      <a href="inscripcionCursos.html">
+                        <img src="images/cursoPerro.jpg" alt="Curso de pintura">
+                        <div class="overlay col-12">
+                          <h5>Mejor amigo en casa</h5>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a target="_blank" rel="noopener noreferrer">
+          <button id="btn-ver-mas-cursos" type="button" class="btn-ver-mas">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ver más cursos
+          </button>
+        </a>
+      </section>
+
   </main>
   <!-- Pie de pagina ( footer )-->
   <footer class="seccion-oscura">
-    <p class="footer-texto text-center">Descubre un mundo de aprendizaje.<br>Avanzemos juntos.</p>
+    <p class="footer-texto text-center">Descubre un mundo de aprendizaje.<br>Avancemos juntos.</p>
     <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-twitter"></i>
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-twitter"></i>
     </div>
     <div class="derechos-de-autor">
       <p>Aquino Mariana - Fittipaldi Hernán - Sersewitz Guido <br>(Visualizacion e Interfaces 2023) &#169;</p>
@@ -281,4 +307,5 @@
   <!-- Javascript-->
   <script src="js/index.js"></script>
 </body>
+
 </html>
