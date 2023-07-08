@@ -118,7 +118,7 @@
                 <span></span>
                 Volver a Cursos
               </a>
-              <button id="btn-ver-mas-cursos" type="submit" class="btn-ver-mas">
+              <button id="btn-ver-mas-cursos" type="submit" class="btn-ver-mas" data-bs-toggle="modal" data-bs-target="#modalInscripcion">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -129,6 +129,24 @@
             </form>
             <br>
         </div>
+    </div>
+
+    <div class="modal fade" id="modalInscripcion" tabindex="-1" aria-labelledby="modalInscripcion" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalInscripcion">¡Felicitaciones, inscripción exitosa!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">Tu inscripción ha sido exitosa. </p>
+            <p  class="text-center">¡Ya puedes acceder al contenido del curso!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
     </div>
 </section >
 
