@@ -106,13 +106,13 @@ section {
   font-family: 'Rowdies', cursive;
 }
 .seccion-descripcion {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #584e4e;
   font-weight: 400;
   transition: .2s all ease-in;
 }
 .seccion-texto {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: 5px;
 }
 
@@ -353,6 +353,16 @@ section {
   font-size: 3vh;
 }
 
+.card{
+  transition: .2s;
+}
+.card:hover{
+  background-color: #ddd;
+}
+
+.card img:hover{
+  opacity: 0.8;
+}
 .curso {
   position: relative;
   border: 2px solid #8080804d;
